@@ -7,10 +7,10 @@ from wagtail.search import index
 
 
 class TutorialIndexPage(Page):
-    intro = RichTextField(blank=True)
+    intro = models.CharField(max_length=250)
 
     content_panels = Page.content_panels + [
-        FieldPanel('intro', classname="full")
+        FieldPanel('intro'),
     ]
 
 class TutorialPage(Page):

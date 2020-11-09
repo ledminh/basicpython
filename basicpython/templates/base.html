@@ -21,13 +21,17 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/basicpython.css' %}">
 
         {% block extra_css %}
-            {# Override this in templates to add extra stylesheets #}
+            <link rel="stylesheet" type="text/css" href="{% static 'css/tutorialindex.css' %}">
         {% endblock %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
-        {% wagtailuserbar %}
+        <div class="header">PYTHON BASIC</div>
 
+        <div class="userPanel">
+            <div class="user_button">Login</div>
+            <div class="user_button">Signup</div>
+        </div>
         {% block content %}{% endblock %}
 
         {# Global javascript #}

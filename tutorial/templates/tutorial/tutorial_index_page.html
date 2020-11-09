@@ -5,14 +5,24 @@
 {% block body_class %}template-tutorialindexpage{% endblock %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
+<div class="tutorial_index_page">
+    <div class="tutorial_page_header">
+      <p class="title">{{ page.title }}</p>
+      <p class="intro">{{page.intro}}</p>
+    </div>
+  
+    <div class="tutorial_list">
+        {% for post in page.get_children %}
+            <div class="tutorial_item">
+                <div class="tutorial_item_title" onClick="document.location = '{% pageurl post %}';">{{ post.title }}</div>
+                <div class="tutorial_item_intro"> {{ post.specific.intro }}</div>
+            </div>
 
-    <div class="intro">{{ page.intro|richtext }}</div>
+        {% endfor %}
+            
+    </div>
+</div>
 
-    {% for post in page.get_children %}
-        <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
-        {{ post.specific.intro }}
-        {{ post.specific.body|richtext }}
-    {% endfor %}
+   
 
 {% endblock %}

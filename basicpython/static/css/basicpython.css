@@ -1,10 +1,108 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-.header {
-    background-color: blueviolet;
-    color: red;
-}
-
+    background-color: #f7f0cb;
+  }
+  
+  .header {
+    box-sizing: border-box;
+    height: 200px;
+    min-width: 800px;
+    background-color: #022152;
+    color: #d4d4d4;
+    font-weight: bold;
+    font-size: 90px;
+    
+    padding-left: 10px;
+    padding-top: 50px;
+    
+    border-bottom: 10px solid #ccc9bc;
+  }
+  
+  .userPanel {
+    width: 100%;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .user_button {
+    display: inline-block;
+    background-color: #07324a;;
+    color: #c2c2c2;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .user_button:hover {
+    color: white;
+  }
+  
+  .tutorials {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .tutorial_level {
+    display: inline-block;
+    width: 30%;
+    min-width: 300px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+  }
+  
+  .level_name {
+    background-color: #360400;
+    color: #d4d4d4;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .level_name:hover {
+    color: white;
+  }
+  
+  .tutorial_list {
+    box-sizing: inline-box;
+    padding: 10px;
+  }
+  
+  .level_discord {
+    background-color: #002a4a;
+    color: #d4d4d4;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .level_discord:hover {
+    color: white;
+  }
+  
+  .code_editor {
+    background-color: #002a4a;
+    text-align: center; 
+    padding: 10px;
+    min-width: 300px;
+  
+  }
+  
+  .code_editor_button {
+    display: inline-block;
+    padding: 10px;
+    color: #d4d4d4;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .code_editor_button:hover {
+    color: white;
+  }

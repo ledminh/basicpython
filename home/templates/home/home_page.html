@@ -2,16 +2,11 @@
 
 {% load wagtailcore_tags %}
 
+
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    <div class="header">PYTHON BASIC</div>
-
-    <div class="userPanel">
-        <div class="user_button">Login</div>
-        <div class="user_button">Signup</div>
-    </div>
-    
+ 
     <div class="tutorials">
         <div class="tutorial_level">
             <div class="level_name">LEVEL 1</div>
@@ -50,5 +45,4 @@
     <div class="code_editor">
         <div class="code_editor_button">CODE EDITOR</div>
     </div>
-    {{ page.body|richtext }}
 {% endblock %}
