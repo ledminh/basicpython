@@ -1,21 +1,54 @@
 {% extends "base.html" %}
-{% load static %}
+
+{% load wagtailcore_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
 
-{% block extra_css %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
-
 {% block content %}
+    <div class="header">PYTHON BASIC</div>
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
+    <div class="userPanel">
+        <div class="user_button">Login</div>
+        <div class="user_button">Signup</div>
+    </div>
+    
+    <div class="tutorials">
+        <div class="tutorial_level">
+            <div class="level_name">LEVEL 1</div>
+            <div class="tutorial_list">
+            <p>Tutorial 1</p>
+            <p>Tutorial 2</p>
+            <p>Tutorial 3</p>
+            <p>Tutorial 4</p>
+            </div>
+            <div class="level_discord">DISCORD LEARNING GROUP</div>
+        </div>
+        
+        <div class="tutorial_level">
+            <div class="level_name">LEVEL 2</div>
+            <div class="tutorial_list">
+            <p>Tutorial 1</p>
+            <p>Tutorial 2</p>
+            <p>Tutorial 3</p>
+            <p>Tutorial 4</p>
+            </div>
+            <div class="level_discord">DISCORD LEARNING GROUP</div>
+        </div>
+        
+        <div class="tutorial_level">
+            <div class="level_name">LEVEL 3</div>
+            <div class="tutorial_list">
+            <p>Tutorial 1</p>
+            <p>Tutorial 2</p>
+            <p>Tutorial 3</p>
+            <p>Tutorial 4</p>
+            </div>
+            <div class="level_discord">DISCORD LEARNING GROUP</div>
+        </div>
+    </div>
 
-{% endblock content %}
+    <div class="code_editor">
+        <div class="code_editor_button">CODE EDITOR</div>
+    </div>
+    {{ page.body|richtext }}
+{% endblock %}
