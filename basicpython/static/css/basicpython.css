@@ -72,6 +72,14 @@ body {
     box-sizing: inline-box;
     padding: 10px;
   }
+
+  .tutorial_list>.tutorial_item {
+    cursor: pointer;
+  } 
+
+  .tutorial_list>.tutorial_item:hover {
+    color: #b36262;
+  }
   
   .level_discord {
     background-color: #002a4a;

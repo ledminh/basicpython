@@ -5,13 +5,12 @@
 {% block body_class %}template-blogpage{% endblock %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date }}</p>
-
-    <div class="intro">{{ page.intro }}</div>
-
-    {{ page.body|richtext }}
-
-    <p><a href="{{ page.get_parent.url }}">Return to blog</a></p>
-
+<div class="tutorial_content_page">
+    <div class="tutorial_title">{{ page.title }}</div>    
+    <div class="tutorial_date">{{ page.date }}</div>
+    <div class="tutorial_body">
+        {{ page.body|richtext }}
+        <p class="goback_link"><a href="{{ page.get_parent.url }}">Return to {{page.get_parent.title}}</a></p>
+  </div>
+    
 {% endblock %}
