@@ -93,24 +93,31 @@ body {
   }
   
   .code_editor {
-    background-color: #002a4a;
+    background-color: #005fa8a2;
     text-align: center; 
     padding: 10px;
     min-width: 300px;
-  
   }
   
-  .code_editor_button {
+  .code_editor_title {
     display: inline-block;
     padding: 10px;
-    color: #d4d4d4;
+    color: white;
     font-weight: bold;
     font-size: 25px;
-    border: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     border-radius: 10px;
-    cursor: pointer;
+  
+  }
+
+  .code_editor_embeded {
+    margin-top: 10px;
   }
   
-  .code_editor_button:hover {
-    color: white;
+  .footer {
+    
+    text-align: center;
+    
   }
+ 
