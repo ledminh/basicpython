@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-registerpage{% endblock %}
+
+{% block content %}
+<center>
+    <form>
+        <div>
+            <label>Username: </label>
+            <input type="text" name="name" placeholder="Enter Username here" required>
+        </div>
+        
+        <div>
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter Email here" required>
+        </div>
+        
+        <div>
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter Password here" required>
+        </div>
+        
+        <div>
+            <button type="submit" onclick="location.href = '/register-successful/';">Submit</button>
+        </div>
+        
+    </form>
+</center>
+
+   
+
+{% endblock %}

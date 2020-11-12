@@ -113,8 +113,25 @@ body {
 
   .code_editor_embeded {
     margin-top: 10px;
+    
   }
   
+  .loginPanelHidden {
+    display: none;
+  }
+
+  .signupPanelHidden {
+    display: none;
+  }
+
+  .loginPanelShow {
+    display: block;
+  }
+
+  .signupPanelShow {
+    display: block;
+  }
+
   .footer {
     
     text-align: center;
