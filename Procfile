@@ -1,0 +1,1 @@
+web: gunicorn basicpython.wsgi:application --log-file -
