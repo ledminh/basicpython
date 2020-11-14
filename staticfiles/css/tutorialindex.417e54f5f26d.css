@@ -1,0 +1,53 @@
+.tutorial_index_page {
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    width: 90%;
+    min-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .tutorial_page_header {
+    background-color: #264b6e;
+    color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .tutorial_page_header > .title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    border-bottom: 2px solid;
+  }
+  
+  .tutorial_page_header > .intro {
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .tutorial_list {
+    padding: 10px;
+  }
+  
+  .tutorial_item {
+    margin: 10px;  
+  }
+  
+  .tutorial_item_title {
+    background-color: #c3d2e0;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .tutorial_item_title:hover {
+    color: #b59a9a;
+  }
+  
+  .tutorial_item_intro {
+    font-style: italic;
+  }
