@@ -30,59 +30,16 @@
         <div class="header">PYTHON BASIC</div>
 
         <div class="userPanel">
-            <div class="user_button" id="login_button">Login</div>
-            <div class="user_button" id="signup_button" >Signup</div>
-        </div>
+            {% if request.user.is_authenticated %}
+                Hello {{ request.user.username }},
+                <a href="{% url 'account_logout' %}">Logout?</a>
+            {% else %}
+                <div class="user_button" id="login_button" onClick="document.location = '/login';">Login</div>
+                <div class="user_button" id="signup_button" onClick="document.location = '/signup';">Signup</div>
+            {% endif %}         
 
-        <div id="loginPanel" class="loginPanelHidden">
-            <center>
-                <form>
-                    <div>
-                        <label>Username: </label>
-                        <input type="text" name="name" placeholder="Enter Username here" required>
-                    </div>
-                    
-                    <div>
-                        <label>Password: </label>
-                        <input type="password" name="password" placeholder="Enter Password here" required>
-                    </div>
-                    
-                    <div>
-                        <button type="submit" onclick="location.href = 'successlogin.html';">Submit</button>
-                    </div>
-                    
-                    <div>
-                        <button onclick="location.href = 'registerpage.html';">Register</button>
-                    </div>
             
-                </form>
-            </center>
-        </div>
-
-        <div id="signupPanel" class="signupPanelHidden">
-            <center>
-                <form>
-                    <div>
-                        <label>Username: </label>
-                        <input type="text" name="name" placeholder="Enter Username here" required>
-                    </div>
-                    
-                    <div>
-                        <label>Email: </label>
-                        <input type="email" name="email" placeholder="Enter Email here" required>
-                    </div>
-                    
-                    <div>
-                        <label>Password: </label>
-                        <input type="password" name="password" placeholder="Enter Password here" required>
-                    </div>
-                    
-                    <div>
-                        <button type="submit" onclick="location.href = '/register-successful/';">Submit</button>
-                    </div>
-                    
-                </form>
-            </center>
+            
         </div>
         {% block content %}{% endblock %}
 

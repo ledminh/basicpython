@@ -8,9 +8,11 @@ from wagtail.search import index
 
 class TutorialIndexPage(Page):
     intro = models.CharField(max_length=250)
-
+    discordLink = models.CharField(max_length=350, default="http")
+    
     content_panels = Page.content_panels + [
         FieldPanel('intro'),
+        FieldPanel('discordLink')
     ]
 
 class TutorialPage(Page):

@@ -1,0 +1,31 @@
+.tutorial_content_page {
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    width: 90%;
+    min-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .tutorial_title {
+    color: #123061;
+    margin-left: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: 2px solid #3d3d3d;  
+  }
+  
+  .tutorial_date {
+    margin-top: 5px;
+    background-color: #c7c7c7;
+    margin-left: 10px;
+    padding: 4px;
+    font-style: italic;
+  }
+  
+  .tutorial_body {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  

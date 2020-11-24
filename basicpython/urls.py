@@ -16,6 +16,9 @@ urlpatterns = [
 
     path('search/', search_views.search, name='search'),
 
+    path(r'', include('allauth.urls')),
+    path(r'', include(wagtail_urls))
+
 ]
 
 

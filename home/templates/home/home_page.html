@@ -8,18 +8,19 @@
 {% block content %}
  
     <div class="tutorials">
-        {% for post in page.get_children %}
+        {% for level in page.get_children %}
             <div class="tutorial_level">
-                <div class="level_name" onClick="document.location = '{{post.url}}';">{{post.title}}</div>
+                <div class="level_name" onClick="document.location = '{{level.url}}';">{{level.title}}</div>
                 <div class="level_intro">{{post.intro}}</div>
                 <div class="tutorial_list">
-                    {% for tutorial in post.get_children|slice:":5" %}
+                    {% for tutorial in level.get_children|slice:":5" %}
                         <p class="tutorial_item" onClick="document.location = '{{tutorial.url}}';">{{tutorial.title}}</p>
                     {% endfor %}                  
                 </div>
-                <div class="level_discord">DISCORD LEARNING GROUP</div>
+                
+                <div class="level_discord" onClick="document.location = '{{ level.specific.discordLink }}';">DISCORD LEARNING GROUP</div>
             </div>   
-       
+            
 
         {% endfor %}
 
