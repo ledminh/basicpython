@@ -10,6 +10,7 @@ class TutorialIndexPage(Page):
     intro = models.CharField(max_length=250)
     discordLink = models.CharField(max_length=350, default="http")
     
+    
     content_panels = Page.content_panels + [
         FieldPanel('intro'),
         FieldPanel('discordLink')
@@ -19,6 +20,7 @@ class TutorialPage(Page):
     date = models.DateField("Post date")
     intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
+    replLink = models.CharField(max_length=350, default="http")
 
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
@@ -29,4 +31,5 @@ class TutorialPage(Page):
         FieldPanel('date'),
         FieldPanel('intro'),
         FieldPanel('body', classname="full"),
+        FieldPanel('replLink'),
     ]

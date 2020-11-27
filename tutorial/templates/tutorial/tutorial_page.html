@@ -10,7 +10,10 @@
     <div class="tutorial_date">{{ page.date }}</div>
     <div class="tutorial_body">
         {{ page.body|richtext }}
+        <iframe height="400px" width="100%" src='{{page.replLink}}' scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
         <p class="goback_link"><a href="{{ page.get_parent.url }}">Return to {{page.get_parent.title}}</a></p>
   </div>
     
 {% endblock %}
+
+<iframe height="400px" width="100%" src="" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
